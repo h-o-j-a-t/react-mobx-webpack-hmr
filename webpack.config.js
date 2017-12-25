@@ -88,45 +88,6 @@ module.exports = (env) => {
       ]
     },
     plugins: [
-    //   new HtmlWebpackExternalsPlugin({
-    //     externals: [
-    //       {
-    //         module: 'jquery',
-    //         entry: 'dist/jquery.min.js',
-    //         global: 'jQuery'
-    //       }
-        //   ,
-        //   {
-        //     module: 'x2js',
-        //     entry: 'x2js.js',
-        //     global: 'X2JS'
-        //   },
-        //   {
-        //     module: 'popper.js',
-        //     entry: 'dist/umd/popper.min.js'
-        //   },
-        //   {
-        //     module: 'bootstrap-rtl',
-        //     entry: 'dist/js/bootstrap.min.js'
-        //   },
-        //   {
-        //     module: 'bootstrap-rtl',
-        //     entry: 'dist/css/bootstrap-rtl.min.css'
-        //   },
-        //   {
-        //     module: 'font-awesome',
-        //     entry: 'css/font-awesome.min.css',
-        //     supplements: ['fonts/']
-        //   },
-        //   {
-        //     module: 'material-design-icons',
-        //     entry: 'iconfont/material-icons.css',
-        //     supplements: ['iconfont/']
-        //   }
-    //     ],
-    //     outputPath: 'vendors',
-    //     hash: true
-    // }),
       new HtmlWebpackPlugin({
           template: 'src/index.html',
           minify: {
@@ -135,14 +96,7 @@ module.exports = (env) => {
           hash: false
       }),
       new webpack.NamedModulesPlugin(),
-      new webpack.HotModuleReplacementPlugin()//,
-    //   new CopyWebpackPlugin([
-    //     {from: __dirname + '/bootstrap-rtl', to: __dirname + '/node_modules/bootstrap-rtl'},
-    //     {from: __dirname + '/Scripts', to: __dirname + '/dist/web/Scripts'},
-    //     {from: __dirname + '/jQuery', to: __dirname + '/dist/web/jQuery'},
-    //     {from: __dirname + '/fav-icon', to: __dirname + '/dist/fav-icon'},
-    //     {from: __dirname + '/node_modules/material-design-icons/iconfont', to: __dirname + '/dist/fonts'}
-    //   ])
+      new webpack.HotModuleReplacementPlugin()
     ]
   }
 }
