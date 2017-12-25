@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "es2015",
+        "allowJs": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "target": "es2015"
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
